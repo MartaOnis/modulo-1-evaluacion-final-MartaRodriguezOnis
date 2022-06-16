@@ -1,49 +1,87 @@
 .header {
     height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content:space-evenly;
     align-items:center;
-    gap:65px;
     background-image: url("../images/header.jpg");
     background-size:cover;
-   /* @media all and (min-width:900px) {
-        flex-direction: row;*/
+    @media all and (min-width:900px) {
+        align-items: flex-start;       
+} 
+&__menu {
+    display: none;
+    @media all and (min-width:1728px) {
+        display: flex;
+        position: fixed; 
+        top:60px;
+        padding-left: 265px;     
+} 
 }
-.menu {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    &__desktop {
+&__icon {
+    position: fixed;
+    padding: 10px;
+    top: 45px;
+    left: 23px;
+    text-decoration: none;
+    color: $colorPrimary;
+    @media all and (min-width:900px) {
+    top: 65px;
+    left: 72px;
+    }
+    @media all and (min-width:1728px) {
         display: none;
-        @media all and (min-width:1728px) {
-            display: block;
     }
+}
+&__image { 
+    flex-grow: 0.5;
+    padding-top: 20px;
+    width: 213px;
+    height: 96px;
+    @media all and (min-width:900px) {
+        padding: 0;
+     position: absolute;
+     top: 40px;
+     left:40%
+}  
+}
+}
+.menu__desktop li {
+        display: inline-block;
     }
-    &__icon {
-        position: fixed;
-        padding: 10px;
-        top: 45px;
-        left: 23px;
-        text-decoration: none;
+.menu__desktop a {
         color: $colorPrimary;
+        text-decoration: none;
+        font-family: $font-main;
+        font-size: 16px;
+        text-align: center;
+        text-transform: capitalize;
+        padding: 15px;
     }
-    &__image { 
-        width: 213px;
-    }  
- }
+.imagelogo {
+        width: 100%;
+    }
 .space {
     flex-grow: 2;
     display: flex;
     flex-direction: column;
+    /*justify-content: space-evenly;*/
+    justify-content:space-evenly;
     align-items: center;
-    justify-content: space-evenly;
     @media all and (min-width:900px) {
+        padding-top: 300px;
+        padding-left: 147px;
+        padding-bottom: 210px;
+        justify-content:center;
         align-items: flex-start;
-        justify-content: left;
-
+        gap: 15px;
+    }
+    @media all and (min-width:1728px) {
+        padding-left: 280px;  
+        justify-content:center;
+        padding-bottom: 0px;
+        padding-top: 0px;
     }
 
 &__title {
@@ -54,11 +92,15 @@
         :first-letter {
             text-transform: uppercase;
     }
+    @media all and (min-width:900px) {
+        width: 14ch;
+        font-size: 36px;
+}
 }
 &__button {
-        font-family: $font-main;
         height: 48px;
         width: 176px;
+        font-family: $font-main;
         font-size: 16px;
         font-weight: 600;
         text-align: center;
@@ -77,4 +119,5 @@
     color:$colorWhite;
     text-decoration: none;  
 }
+
 
