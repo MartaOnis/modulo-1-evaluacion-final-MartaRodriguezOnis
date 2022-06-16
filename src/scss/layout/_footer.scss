@@ -1,1 +1,49 @@
+.footer {
+    background-color:$colorPrimary ;
+    font-family: $font-main;
+    font-size: 14px;
+    color: $colorSecondary;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: 
+    center;
+    align-items: center;
+    &__shop {
+        text-align:justify;
+        display:block;
+        width: 200px;
+    }
+    &__us {
+        text-align:justify;
+        display:block;
+        width: 200px; 
+        padding-top: 20px; 
+        padding-bottom: 20px; 
+    }
+    &__contact {
+        text-align:justify;
+        display:block;
+        width: 200px;
+    }
+}
 
+.menufooter li {
+    display: block;
+}
+.menufooter a {
+    text-decoration: none;
+    color: $colorSecondary;
+}
+.menumedia a {
+    text-decoration: none;
+    color: $colorSecondary;
+
+}
+.arrow-footer {
+    text-decoration: none;
+    color: $colorSecondary;
+    position: relative;
+    bottom: 0px;
+}
