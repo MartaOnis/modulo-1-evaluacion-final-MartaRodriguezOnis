@@ -1,24 +1,18 @@
 <main>
     <section class="open">
-        <h2 class="open__title">Volverse organizado se siente mejor con OPEN SPACES</h2>
-        <article class="open__article1">
-            <div class="image1"><img src="./assets/images/icon_1.png" alt="imagen de una mesa con una planta">
-            </div>
-            <h3>Lo que necesitas</h3>
-            <p>Una línea de productos diseñados para todos tus espacios</p>
-        </article>
-
-        <article class="open__article2">
-            <div class="open__image2"><img src="./assets/images/icon_2.png" alt="Imagen de una bolsa de reciclaje">
-            </div>
-            <h3>Materia primas sustentables</h3>
-            <p>Todos los productos con materias primas sustentables</p>
-        </article>
-        <article class="open__article3">
-            <div class="open__image3"><img src="./assets/images/icon_3.png" alt="Imagen de un cartel"></div>
-            <h3>Guía</h3>
-            <p>Soporte y asesoramiento para ayudarte con tu objetivo</p>
-        </article>
+        <h2 class="open__title">Volverse organizado se siente mejor con open spaces</h2>
+        <include class="open__article1" src="./articles.html" srcImage="./assets/images/icon_1.png"
+            classImage="imgArticle" alt="imagen de una mesa con una planta" title="Lo que necesitas"
+            classTitle="h3article" parragraph="Una línea de productos diseñados para todos tus espacios"
+            classParragraph="pArticle"></include>
+        <include class="open__article2" src="./articles.html" srcImage="./assets/images/icon_2.png"
+            classImage="imgArticle" alt="Imagen de una bolsa de reciclaje" title="Materia primas sustentables"
+            classTitle="h3article" parragraph="Todos los productos con materias primas sustentables"
+            classParragraph="pArticle"></include>
+        <include class="open__article3" src="./articles.html" srcImage="./assets/images/icon_3.png"
+            classImage="imgArticle" alt="Imagen de un cartel" title="Guía" classTitle="h3article"
+            parragraph="Soporte y asesoramiento para ayudarte con tu objetivo" classParragraph="pArticle">
+        </include>
     </section>
 
     <section class="send">
@@ -27,7 +21,7 @@
         </div>
         <h2 class="send__title">Envío gratis garantizado</h2>
         <p class="send__parragraph">Envío gratis en compras desde 100</p>
-        <a href="#" class="send__link">Comprar ahora</a>
+        <a href="" class="send__link">Comprar ahora</a>
     </section>
     <section class="enjoy">
         <article class="enjoy__article">
@@ -36,9 +30,7 @@
             <button class="article-button"><a class="enjoy-a" href="#">Comprar ahora</a></button>
         </article>
         <div class="enjoy__image">
-            <img src="./assets/images/creando-espacios.jpg" alt="Imagen de un baño">
+            <img class="image-bath" src="./assets/images/creando-espacios.jpg" alt="Imagen de un baño">
         </div>
-
     </section>
-
 </main>

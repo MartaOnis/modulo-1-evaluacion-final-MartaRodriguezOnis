@@ -1,121 +1,114 @@
 .header {
     height: 100vh;
     width: 100vw;
+    background-image: url("../images/header.jpg");
+    background-size:cover;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
     align-items:center;
-    background-image: url("../images/header.jpg");
-    background-size:cover;
+
     @media all and (min-width:900px) {
-        align-items: flex-start;       
+    justify-content: center;
+    align-items: flex-start; 
+    padding-left: 147px;     
 } 
-&__menu {
-    display: none;
+
     @media all and (min-width:1728px) {
-        display: flex;
-        position: fixed; 
-        top:60px;
-        padding-left: 265px;     
+    padding-left: 265px;
+    }
+
+&__menu {
+    @media all and (min-width:1728px) {
+    position: fixed; 
+    top:60px;   
+    margin-left: -15px;
 } 
 }
 &__icon {
     position: fixed;
-    padding: 10px;
-    top: 45px;
-    left: 23px;
+    padding: 20px;
+    top: 35px;
+    left: 13px;
     text-decoration: none;
     color: $colorPrimary;
+
     @media all and (min-width:900px) {
     top: 65px;
     left: 72px;
     }
+
     @media all and (min-width:1728px) {
         display: none;
     }
 }
-&__image { 
-    flex-grow: 0.5;
-    padding-top: 20px;
+&__container { 
     width: 213px;
     height: 96px;
+    position: absolute;
+    top: 20px;
+
     @media all and (min-width:900px) {
-        padding: 0;
-     position: absolute;
-     top: 40px;
-     left:40%
+    padding: 0;
+    top: 40px;
+    left:40%
 }  
 }
-}
-.menu__desktop li {
-        display: inline-block;
-    }
-.menu__desktop a {
-        color: $colorPrimary;
-        text-decoration: none;
-        font-family: $font-main;
-        font-size: 16px;
-        text-align: center;
-        text-transform: capitalize;
-        padding: 15px;
-    }
-.imagelogo {
-        width: 100%;
-    }
-.space {
-    flex-grow: 2;
-    display: flex;
-    flex-direction: column;
-    /*justify-content: space-evenly;*/
-    justify-content:space-evenly;
-    align-items: center;
-    @media all and (min-width:900px) {
-        padding-top: 300px;
-        padding-left: 147px;
-        padding-bottom: 210px;
-        justify-content:center;
-        align-items: flex-start;
-        gap: 15px;
-    }
-    @media all and (min-width:1728px) {
-        padding-left: 280px;  
-        justify-content:center;
-        padding-bottom: 0px;
-        padding-top: 0px;
-    }
-
 &__title {
-        color:$colorPrimary;
-        font-family: $font-main;
-        font-size: 24px;
-        font-weight: 600;
-        :first-letter {
-            text-transform: uppercase;
-    }
+    color:$colorPrimary;
+    font-family: $font-main;
+    font-size: 24px;
+    font-weight: 600;
+    :first-letter {
+        text-transform: uppercase;
+}
     @media all and (min-width:900px) {
-        width: 14ch;
-        font-size: 36px;
+    width: 14ch;
+    font-size: 36px;
+    padding-bottom: 20px;
 }
 }
 &__button {
-        height: 48px;
-        width: 176px;
-        font-family: $font-main;
-        font-size: 16px;
-        font-weight: 600;
-        text-align: center;
-        text-decoration: none;
-        text-transform: capitalize;
-        padding: 12px 24px 12px 24px;
-        background-color: $colorPrimary;
-        color: $colorWhite;
-        border: 0;
-        :hover {
-            color: coral;
-        } 
+    height: 55px;
+    width: 200px;
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: $colorPrimary;
+    color: $colorWhite;
+    border: 0;
+    :hover {
+        color: coral;
+} 
+}
+}
+.menu-desktop {
+     display: none;
+
+    @media all and (min-width:1728px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
     }
 }
+.menu-desktop a {
+    color: $colorPrimary;
+    text-decoration: none;
+    font-family: $font-main;
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 15px;
+    }
+.imageLogo {
+    width: 100%;
+    }
 .button-a {
+    padding: 10px;
     color:$colorWhite;
     text-decoration: none;  
 }
