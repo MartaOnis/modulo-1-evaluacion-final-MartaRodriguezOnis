@@ -5,45 +5,80 @@
     color: $colorSecondary;
     padding-top: 56px;
     padding-bottom: 56px;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: 
     center;
     align-items: center;
+    @media all and (min-width:900px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items:flex-start
+    }
     &__shop {
-        text-align:justify;
-        display:block;
         width: 200px;
+       padding-top: 5px;
+       @media all and (min-width:900px) {
+        padding: 0;
+       }
     }
     &__us {
-        text-align:justify;
-        display:block;
         width: 200px; 
         padding-top: 20px; 
         padding-bottom: 20px; 
+        margin-top: 15px;
+        @media all and (min-width:900px) {
+        padding: 0;
+        margin: 0;
+        }
     }
     &__contact {
-        text-align:justify;
-        display:block;
         width: 200px;
+        margin-top: 15px;
+        @media all and (min-width:900px) {
+        padding: 0;
+        margin: 0;
     }
+    }
+}
+.menufooter {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
 }
 
 .menufooter li {
-    display: block;
-}
+    padding-top: 10px;
+    list-style: none;}
+
 .menufooter a {
+    list-style: none;
     text-decoration: none;
     color: $colorSecondary;
+    padding-top:  10px;
+    
 }
+.menumedia {
+    display: flex;
+    justify-content:left;
+    align-items:center;
+}
+
 .menumedia a {
     text-decoration: none;
     color: $colorSecondary;
+    padding-top: 10px;
+    padding-right: 15px;
+    
 
 }
 .arrow-footer {
     text-decoration: none;
     color: $colorSecondary;
-    position: relative;
-    bottom: 0px;
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    padding: 15px;
 }
