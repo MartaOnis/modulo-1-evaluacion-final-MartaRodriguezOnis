@@ -22,12 +22,12 @@
     }
 &__shop {
         width: 200px;
-       padding-top: 5px;
-       @media all and (min-width:900px) {
+        padding-top: 5px;
+        @media all and (min-width:900px) {
         padding: 0;
        }
     }
-    &__us {
+&__us {
         width: 200px; 
         padding-top: 20px; 
         padding-bottom: 20px; 
@@ -37,7 +37,7 @@
         margin: 0;
         }
     }
-    &__contact {
+&__contact {
         width: 200px;
         margin-top: 15px;
         @media all and (min-width:900px) {
