@@ -90,6 +90,25 @@
 }
 }
 
+.pricing {
+    width: 100vw;
+    background-color: $colorPrimary;
+    color:$colorWhite ;
+    text-align: center;
+    &__articles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media all and (min-width:900px){
+            flex-direction: row;
+            padding-left: 30px;
+            padding-right: 30px;
+
+}
+    }
+}
+
 .send {
     background-color:$colorBack2;
     font-family: $font-main;
